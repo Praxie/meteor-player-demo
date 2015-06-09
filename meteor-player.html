@@ -1,0 +1,21 @@
+<head>
+  <title>meteor-player</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor player!</h1>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <div class="player">
+    <audio id="audio" src="http://www.sousound.com/music/healing/healing_01.mp3" preload="auto"></audio>
+    <div class="play">PLAY</div>
+    <div class="pause">PAUSE</div>
+    <div class="line">
+      <svg width="100%" height="100%" class="track">
+        <rect {{cursorAttributes}}></rect>
+      </svg>
+    </div>
+  </div>
+</template>
